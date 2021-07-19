@@ -21,6 +21,7 @@ module.exports = {
   ],
   rules: {
     // js/ts
+    '@typescript-eslint/no-var-requires': 0,
     'eol-last': 'error',
     'no-trailing-spaces': 'error',
     'comma-style': ['error', 'last'],

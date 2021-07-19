@@ -1,4 +1,4 @@
-import { App } from 'vue';
+import { App } from 'vue'
 import type { SFCWithInstall } from '@baiyu-ui/utils/types'
 import Backtop from './src/index.vue'
 

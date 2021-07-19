@@ -18,34 +18,34 @@
 <script lang='ts'>
 import { computed, defineComponent } from 'vue'
 interface IBaiBacktopProps {
-  right: number,
-  bottom: number,
+  right: number
+  bottom: number
 }
 export default defineComponent({
   name: 'BaiBacktop',
   props: {
     right: {
       type: Number,
-      default: 40
+      default: 40,
     },
     bottom: {
       type: Number,
-      default: 40
-    }
+      default: 40,
+    },
   },
   emits: ['click'],
   setup(props: IBaiBacktopProps, ctx) {
     const styleRight = computed(() => `${props.right}px`)
     const styleBottom = computed(() => `${props.bottom}px`)
-    const handleClick = (event) => {
-      console.log('click backtop');
+    const handleClick = event => {
+      console.log('click backtop')
       ctx.emit('click', event)
     }
     return {
       styleRight,
       styleBottom,
-      handleClick
+      handleClick,
     }
-  }
+  },
 })
 </script>

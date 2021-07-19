@@ -1,0 +1,36 @@
+{
+  "name": "@baiyu-ui/backtop",
+  "version": "1.0.0",
+  "description": "Backtop Component for Baiyu UI",
+  "keywords": [
+    "backtop",
+    "vue3",
+    "vue",
+    "component"
+  ],
+  "author": "Baiyusoup <1575727840@qq.com>",
+  "license": "ISC",
+  "main": "index.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baiyusoup/baiyu-ui.git"
+  },
+  "scripts": {
+  },
+  "bugs": {
+    "url": "https://github.com/Baiyusoup/baiyu-ui/issues"
+  },
+  "homepage": "https://github.com/Baiyusoup/baiyu-ui#readme",
+  "dependencies": {
+    "@baiyu-ui/utils": "^1.0.0"
+  }
+}

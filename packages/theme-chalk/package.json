@@ -1,0 +1,39 @@
+{
+  "name": "@baiyu-ui/theme-chalk",
+  "version": "1.0.0",
+  "description": "styles for Baiyu UI",
+  "keywords": [
+    "Baiyu UI"
+  ],
+  "author": "Baiyusoup <1575727840@qq.com>",
+  "homepage": "https://github.com/Baiyusoup/baiyu-ui#readme",
+  "license": "ISC",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "directories": {
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baiyusoup/baiyu-ui.git"
+  },
+  "scripts": {
+    "build": "gulp build"
+  },
+  "bugs": {
+    "url": "https://github.com/Baiyusoup/baiyu-ui/issues"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-rename": "^2.0.0"
+  }
+}

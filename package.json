@@ -4,7 +4,51 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "website": "vite --config ./website/vite.config.js",
+    "styles": "bash ./scripts/build_styles.sh",
+    "lint": "eslint ./packages --ext .vue,.js,.ts",
+    "lint-fix": "eslint --fix ./packages --ext .vue,.js,.ts",
+    "commit": "git cz",
+    "release": "standard-version"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "commitlint -e -V"
+  },
+  "lint-staged": {
+    "*.{ts,js,vue}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add ."
+    ]
+  },
   "devDependencies": {
-    "lerna": "^4.0.0"
+    "@commitlint/cli": "^12.1.4",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3",
+    "@vitejs/plugin-vue": "^1.2.5",
+    "@vue/compiler-sfc": "^3.1.5",
+    "commitizen": "^4.2.4",
+    "commitlint-config-cz": "^0.13.2",
+    "cz-customizable": "^6.3.0",
+    "eslint": "^7.31.0",
+    "eslint-plugin-vue": "^7.14.0",
+    "lerna": "^4.0.0",
+    "lint-staged": "^11.0.1",
+    "prettier": "^2.3.2",
+    "standard-version": "^9.3.1",
+    "typescript": "^4.3.5",
+    "vite": "^2.4.2",
+    "vue-tsc": "^0.2.1",
+    "yorkie": "^2.0.0"
+  },
+  "dependencies": {
+    "vue": "^3.1.5"
   }
 }

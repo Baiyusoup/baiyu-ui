@@ -1,0 +1,27 @@
+{
+  "name": "baiyu-ui",
+  "version": "1.0.0",
+  "description": "A Vue 3 UI Component Library",
+  "keywords": [
+    "baiyu-ui",
+    "vue",
+    "ts"
+  ],
+  "author": "Baiyusoup <1575727840@qq.com>",
+  "license": "ISC",
+  "main": "index.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baiyusoup/baiyu-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Baiyusoup/baiyu-ui/issues"
+  },
+  "homepage": "https://github.com/Baiyusoup/baiyu-ui#readme",
+  "dependencies": {
+    "@baiyu-ui/backtop": "^1.0.0"
+  }
+}

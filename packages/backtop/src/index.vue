@@ -38,8 +38,8 @@ export default defineComponent({
     },
     visibilityHeight: {
       type: Number,
-      default: 20
-    }
+      default: 20,
+    },
   },
   emits: ['click'],
   setup(props: IBaiBacktopProps, ctx) {
@@ -71,7 +71,7 @@ export default defineComponent({
     const onScroll = () => {
       visible.value = el.value.scrollTop >= props.visibilityHeight
     }
-    
+
     // backtop点击处理函数
     const handleClick = event => {
       scrollToTop()

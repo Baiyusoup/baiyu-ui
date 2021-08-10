@@ -1,9 +1,17 @@
 <template>
-  <div class="box">1</div>
-  <div class="box">2</div>
-  <div class="box">3</div>
-  <div class="box">4</div>
-  <BaiBacktop />
+  <BaiContainer>
+    <BaiAside>
+      侧边栏
+    </BaiAside>
+    <BaiContainer>
+      <BaiHeader>
+        头部
+      </BaiHeader>
+      <BaiMain>
+        主体
+      </BaiMain>
+    </BaiContainer>
+  </BaiContainer>
 </template>
 
 <script lang="ts">
@@ -11,18 +19,5 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'App',
-  components: {
-  }
 })
 </script>
-
-<style>
-.box {
-  height: 400px;
-  margin: 20px 0;
-  border: 1px solid #eee;
-}
-body {
-  background-color: #2c3e50;
-}
-</style>

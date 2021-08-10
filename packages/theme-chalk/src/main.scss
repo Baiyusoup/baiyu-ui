@@ -1,0 +1,9 @@
+@import './mixins//mixins.scss';
+
+@include b(main) {
+  display: block;
+  flex: 1;
+  padding: 10px;
+  overflow: auto;
+  box-sizing: border-box;
+}
